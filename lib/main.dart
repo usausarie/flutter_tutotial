@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
           onPressed: () {
             final result = Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => NextPage("りゅうせいぐん")),
+              MaterialPageRoute(builder: (context) => NextPage("モチモチの木")),
             );
           },
         ),
