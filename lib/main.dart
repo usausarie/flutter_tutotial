@@ -51,14 +51,14 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.network('https://i.redd.it/ocmneri94rk91.jpg'),
+          Image.asset('images/kawaii.webp'),
           Center(
             child:ElevatedButton(
-              child: Text('kawaii monika'),
+              child: Text('aaa monika'),
               onPressed:  () {
                 final result =  Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => NextPage("❗( ´◔‸◔`)")),
+                  MaterialPageRoute(builder: (context) => NextPage("")),
                 );
                 print(result);
               },
