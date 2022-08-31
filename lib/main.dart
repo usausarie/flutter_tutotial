@@ -42,22 +42,29 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Flutter Tutorial"),
+        title: Text("I like monika"),
         actions:<Widget>[
           Icon(Icons.share),
           Icon(Icons.add)
         ],
       ),
-      body: Center(
-        child:ElevatedButton(
-          child: Text('遷移'),
-          onPressed: () {
-            final result = Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => NextPage("モチモチの木")),
-            );
-          },
-        ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.network('https://i.redd.it/ocmneri94rk91.jpg'),
+          Center(
+            child:ElevatedButton(
+              child: Text('kawaii monika'),
+              onPressed:  () {
+                final result =  Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => NextPage("(っ◞‸◟c)")),
+                );
+                print(result);
+              },
+            ),
+          ),
+        ],
       ),
     );
   }
